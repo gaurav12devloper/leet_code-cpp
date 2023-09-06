@@ -14,9 +14,9 @@ public:
                 j++;
             }
             else{
-                pos++;
+                pos++; 
                 i=pos;
-                j=0;
+                j=0; // make j 0 when any char of needle is not match
             }
         }
         return -1;
