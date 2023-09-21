@@ -13,7 +13,7 @@ public:
     int maxProfit(vector<int>& prices) {
         int size=prices.size(),maxp=0, minp=INT_MAX;
         for(int i=0;i<size;i++){
-            minp=min(minp,prices[i]);
+            minp=min(minp,prices[i]); //it will keep minimum element
             maxp=max(maxp,prices[i]-minp);
         }
         return maxp;
